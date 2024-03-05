@@ -102,10 +102,13 @@
         <header>
             <span class="lv">
                 得分：<em id="score"></em>
+                剩余时间：<em id="time"></em>秒
             </span>
+            <!--
             <span class="lefttime">
                 剩余时间：<em id="time"></em>秒
             </span>
+            -->
             <span class="btn btn-pause" id="pauseBtn">暂停</span>
         </header>
         <canvas class="center" id="gameView" width="400" height="400" style="width: 50%"></canvas>
@@ -164,7 +167,7 @@ Rect.prototype = new createjs.Shape();
 
 var app = {
     lvMap: [2, 3, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 8, 8, 8, 9],
-    lvT: ["瞎子", "色盲", "色郎", "色狼", "色鬼", "色魔", "超級色魔", "变态色魔", "孤独求色"]
+    lvT: ["瞎子", "色盲", "“色”郎", "“色”狼", "“色”鬼", "“色”魔", "超級“色”魔", "变态“色”魔", "独孤求“色”"]
 };
 app.init = function () {
     this.score = 0;
